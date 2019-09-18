@@ -1,0 +1,8 @@
+script.txt
+
+Here is important info to know about javascript
+
+var is used for global while let is local
+
+strict mode - "use strict"; - cannot use undeclared variables
+ex: y = 9; cannot be used since it isn't declared with let or var
