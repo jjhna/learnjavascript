@@ -4,12 +4,16 @@
   <!-- <script src="script.js"></script> -->
   <!-- <script src="script2.js"></script> -->
   <!-- <script src="script3.js"></script> -->
-  <script src="script4.js"></script>
+  <!-- <script src="script4.js"></script> -->
+  <!-- <script src="script5.js"></script> -->
+  <script src="script5.js"></script>
   <!--/* events are used when stuff changes on a html website
   onchange, onclick, onmouseover, onmouseout, onkeydown, onload -->
   <button ondblclick="this.innerHTML = car.insurance()">What is the car info? </button>
-  <button onclick="document.getElementById('demo2').innerHTML = car.moreinsurance()">Whats the info?</button>
+  <button onclick="this.innerHTML = car.moreinsurance()">Whats the info?</button>
   <button onclick="document.getElementById('demo').innerHTML = car.insurance()">INFO?</button>
+  <!-- In HTML event handlers, this refers to the HTML element that received the event: -->
+  <button onclick="this.style.display='none'">Click to Remove Me!</button>
   <p id="demo"></p>
   <p id="demo2"></p>
 </body>

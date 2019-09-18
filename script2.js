@@ -20,6 +20,7 @@ var car = {
   make: "S class",
   insurance: function() {
     return this.type + " " + this.model + " " + this.make;
+    //this = car
   },
   moreinsurance: function() {
     return this.insurance() + " do u want more?";
