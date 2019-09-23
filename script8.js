@@ -24,18 +24,29 @@ var mike2 = new Car('ford', 1989).sound('voom');
 
 var mike4 = new Car('mcqueen', 2000).skill(5);
 
-class Size extends Car {
-  constructor(previous, length, width) {
-    // super() is used to call the parents constructor function
-    //super() method refers to parent class, access parent properties and methods
-    super(previous);
-    this.length = length;
-    this.width = width;
+class Truck {
+  constructor(type) {
+    this.type = type;
   }
-  show() {
-    return this.sound() + ' and is about ' + this.length + ' and ' + this.width;
+  present() {
+    return this.type + ' is about ';
   }
 }
 
-var mike5 = new Size('kia', 5, 9);
+class Size extends Truck {
+  constructor(type, length) {
+    // super() is used to call the parents constructor function
+    //super() method refers to parent class, access parent properties and methods
+    super(type);
+    this.length = length;
+  }
+  show() {
+    return this.present() + this.length + ' ft large';
+  }
+}
+
+var mike5 = new Size('kia', 9);
 console.log(mike5.show());
+
+var mike6 = new Size('honda', 69);
+console.log(mike6.show());
