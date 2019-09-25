@@ -11,7 +11,7 @@
   <!-- <script src="script8.js"></script> -->
   <!-- <script src="script9.js"></script> -->
   <!-- <script src="script10.js"></script> -->
-  <script src="script9.js"></script>
+  <script src="script10.js"></script>
   <!--/* events are used when stuff changes on a html website
   onchange, onclick, onmouseover, onmouseout, onkeydown, onload -->
   <button ondblclick="this.innerHTML = car.insurance()">What is the car info? </button>
@@ -21,6 +21,11 @@
   <button onclick="this.style.display='none'">Click to Remove Me!</button>
   <p id="demo"></p>
   <p id="demo2"></p>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
